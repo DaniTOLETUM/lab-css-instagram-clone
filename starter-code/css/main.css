@@ -5,7 +5,7 @@ light blue: #1c5380
 */
 
 body {
-  background-color: #06365f;
+  background: linear-gradient(to bottom, #497498, #497498 45%, #fff 45%);
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
@@ -18,23 +18,34 @@ body {
 }
 
 .main {
-
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding: 120px 280px 0 10px;
   align-self: center;
 }
 
 .phone_image {
-  width: 50%;
+  width: 40%;
   height: 100%;
   padding: 60px 60px 0 220px;
   align-self: center;
 }
 
-.text {
+.content {
   background-image: url('./../images/frame.png');
   background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%;
+  width: 100%;
+}
+
+.text {
+  padding: 10px 40px;
+}
+
+.text h1 {
+  color: #06365f;
+  font-size: 2em;
 }
 
 .buttons {
