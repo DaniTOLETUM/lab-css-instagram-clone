@@ -7,7 +7,8 @@ light blue: #1c5380
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-  background: linear-gradient(to bottom, #497498, #497498 45%, #fff 45%);
+  background: linear-gradient(to bottom, #1c5380, 45%, #fff 45%);
+  background-repeat: no-repeat;
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
@@ -20,7 +21,6 @@ body {
 }
 
 .main {
-
   width: 60%;
   height: 100%;
   padding: 120px 280px 0 10px;
@@ -28,10 +28,24 @@ body {
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif,
 }
 
-.home {
+.login {
   position: fixed;
-  right: 350px;
-  top: 180px;
+  box-sizing: border-box;
+  background-color: #1c5380;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+
+  right: 290px;
+  top: 140px;
+  height: 40px;
+  width: 120px;
+  /* border: 2px solid #06365f; */
+  box-shadow: 0 8px 16px 0 #06365f;
+}
+
+.login img {
+  padding: 5px 20px 0 0;
 }
 
 .phone_image {
@@ -75,4 +89,22 @@ body {
 
 footer {
   flex-direction: column;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+li {
+  padding: 0 10px;
+}
+
+ul .link {
+  font-weight: bold;
+  color: #1c5380;
 }
